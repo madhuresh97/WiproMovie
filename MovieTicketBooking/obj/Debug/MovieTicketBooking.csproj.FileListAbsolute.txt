@@ -1,0 +1,7 @@
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\bin\Debug\MovieTicketBooking.exe.config
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\bin\Debug\MovieTicketBooking.exe
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\bin\Debug\MovieTicketBooking.pdb
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\obj\Debug\MovieTicketBooking.csprojAssemblyReference.cache
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\obj\Debug\MovieTicketBooking.csproj.CoreCompileInputs.cache
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\obj\Debug\MovieTicketBooking.exe
+D:\VIT University\Wipro\C Sharp Programming Files\MovieTicketBooking\MovieTicketBooking\obj\Debug\MovieTicketBooking.pdb
