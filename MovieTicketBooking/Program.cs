@@ -76,6 +76,15 @@ namespace MovieTicketBooking
     {
         int screenID;
         SortedList<int, string> seats = new SortedList<int, string>();
+
+        public Screen(int screenID, SortedList<int, string> seats)
+        {
+            this.screenID = 1000;
+            for (int i = 1; i <= 50; i++)
+            {
+                this.seats.Add(i, "Vacant");
+            }
+        }
     }
 
     class Show
