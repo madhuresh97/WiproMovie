@@ -27,7 +27,14 @@ namespace MovieTicketBooking
 
         public void DisplayMovieDetails()
         {
-            Console.WriteLine(movieID + movieName + director + producer + cast + duration + story + type);
+            Console.WriteLine("Movie ID: "+ movieID);
+            Console.WriteLine("Movie Name: " + movieName);
+            Console.WriteLine("Director: " + director);
+            Console.WriteLine("Producer: " + producer);
+            Console.WriteLine("Cast: " + cast);
+            Console.WriteLine("Duration: " + duration);
+            Console.WriteLine("Story: " + story);
+            Console.WriteLine("Type: " + type);
         }
     }
 
