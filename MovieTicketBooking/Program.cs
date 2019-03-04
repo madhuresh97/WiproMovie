@@ -12,7 +12,7 @@ namespace MovieTicketBooking
         string movieName, director, producer, cast, story, type;
         double duration;
 
-        Movie(int movieID, string movieName, string director, string producer, string cast, double duration, string story, string type)
+        public Movie(int movieID, string movieName, string director, string producer, string cast, double duration, string story, string type)
         {
             Random rnd = new Random();
             this.movieID = rnd.Next(1000,2000);
@@ -23,6 +23,11 @@ namespace MovieTicketBooking
             this.duration = duration;
             this.story = story;
             this.type = type;
+            if (type != "Running" || type != "Upcoming")
+            {
+                Console.WriteLine("Enter type as Running or Upcoming.");
+            }
+
         }
 
         public void DisplayMovieDetails()
@@ -137,13 +142,17 @@ namespace MovieTicketBooking
             this.username = username;
             this.password = password;
             this.usertype = usertype;
+            if (usertype != "ADMIN" || usertype != "AGENT")
+            {
+                Console.WriteLine("Invalid usertype. Should be ADMIN or AGENT.");
+            }
         }
     }
 
     class Booking
     {
         int BookingID;
-        DateTime BookignDate;
+        DateTime BookingDate;
         int ShowID;
         string CustomerName;
         int NumberOfSeats;
@@ -152,6 +161,25 @@ namespace MovieTicketBooking
         string Email;
         string BookingStatus;
         List<int> SeatNumbers = new List<int>();
+
+        public Booking(int BookingID, DateTime BookingDate, int ShowID, string CustomerName, int NumberOfSeats, string SeatType, decimal Amount, string Email, string BookingStatus, List<int> SeatNumbers)
+        {
+            this.BookingID= 1000;
+            this.BookingDate= BookingDate;
+            this.ShowID= ShowID;
+            this.CustomerName= CustomerName;
+            this.NumberOfSeats=NumberOfSeats;
+            if (NumberOfSeats < 1 || NumberOfSeats > 4)
+            {
+                Console.WriteLine("Enter Number of Seats between 1 to 4.");
+            }
+
+            this.SeatType=SeatType;
+            //this.Amount=NumberOfSeats;
+            this.Email=Email;
+            this.BookingStatus = BookingStatus;
+            this.SeatNumbers = SeatNumbers;
+        }
     }
 
     class Program
