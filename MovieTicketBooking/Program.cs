@@ -130,7 +130,14 @@ namespace MovieTicketBooking
 
     class User
     {
-        string username, password, userType;
+        string username, password, usertype;
+
+        public User(string username, string password, string usertype)
+        {
+            this.username = username;
+            this.password = password;
+            this.usertype = usertype;
+        }
     }
 
     class Booking
