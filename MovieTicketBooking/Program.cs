@@ -98,6 +98,34 @@ namespace MovieTicketBooking
         decimal PlatinumSeatRate;
         decimal GoldSeatRate;
         decimal SilverSeatRate;
+
+        public Show(int ShowID, int MovieID, int TheatreID, int ScreenID, DateTime StartDate, DateTime EndDate, decimal PlatinumSeatRate, decimal GoldSeatRate, decimal SilverSeatRate)
+        {
+            Random rnd = new Random();
+            this.ShowID = rnd.Next(1000, 2000);
+            this.MovieID = MovieID;
+            this.TheatreID= TheatreID;
+            this.ScreenID= ScreenID;
+            this.StartDate= StartDate;
+            this.EndDate=EndDate;
+            this.PlatinumSeatRate= PlatinumSeatRate;
+            this.GoldSeatRate= GoldSeatRate;
+            this.SilverSeatRate= SilverSeatRate;
+        }
+
+        public void DisplayShowDetails()
+        {
+            
+            Console.WriteLine("ShowID: " + ShowID);
+            Console.WriteLine("MovieID" + MovieID);
+            Console.WriteLine("TheatreID" + TheatreID);
+            Console.WriteLine("ScreenID" + ScreenID);
+            Console.WriteLine("StartDate" + StartDate);
+            Console.WriteLine("EndDate" + EndDate);
+            Console.WriteLine("PlatinumSeatRate" + PlatinumSeatRate);
+            Console.WriteLine("GoldSeatRate" + GoldSeatRate);
+            Console.WriteLine("SilverSeatRate" + SilverSeatRate);
+        }
     }
 
     class User
