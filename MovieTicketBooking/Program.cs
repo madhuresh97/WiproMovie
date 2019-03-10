@@ -175,7 +175,24 @@ namespace MovieTicketBooking
             }
 
             this.SeatType=SeatType;
-            //this.Amount=NumberOfSeats;
+            if (SeatType == "Platinum")
+            {
+                this.Amount = 300;
+            }
+            else if (SeatType == "Gold")
+            {
+                this.Amount = 200;
+            }
+            else if (SeatType == "Silver")
+            {
+                this.Amount = 100;
+            }
+            else
+            {
+                Console.WriteLine("Enter Seat Type as- Platinum, Gold or Silver.");
+            }
+
+            this.Amount=NumberOfSeats*Amount;
             this.Email=Email;
             this.BookingStatus = BookingStatus;
             this.SeatNumbers = SeatNumbers;
