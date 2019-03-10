@@ -152,7 +152,7 @@ namespace MovieTicketBooking
     class Booking
     {
         int BookingID;
-        DateTime BookingDate;
+        DateTime BookingDate = DateTime.Now;
         int ShowID;
         string CustomerName;
         int NumberOfSeats;
@@ -162,10 +162,9 @@ namespace MovieTicketBooking
         string BookingStatus;
         List<int> SeatNumbers = new List<int>();
 
-        public Booking(int BookingID, DateTime BookingDate, int ShowID, string CustomerName, int NumberOfSeats, string SeatType, decimal Amount, string Email, string BookingStatus, List<int> SeatNumbers)
+        public Booking(int BookingID, int ShowID, string CustomerName, int NumberOfSeats, string SeatType, decimal Amount, string Email, string BookingStatus, List<int> SeatNumbers)
         {
             this.BookingID= 1000;
-            this.BookingDate= BookingDate;
             this.ShowID= ShowID;
             this.CustomerName= CustomerName;
             this.NumberOfSeats=NumberOfSeats;
