@@ -202,6 +202,7 @@ namespace MovieTicketBooking
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello");
         }
     }
 }
