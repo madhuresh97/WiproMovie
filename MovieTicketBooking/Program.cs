@@ -120,7 +120,7 @@ namespace MovieTicketBooking
 
         public void DisplayShowDetails()
         {
-            
+
             Console.WriteLine("ShowID: " + ShowID);
             Console.WriteLine("MovieID" + MovieID);
             Console.WriteLine("TheatreID" + TheatreID);
